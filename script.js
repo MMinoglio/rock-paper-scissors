@@ -6,12 +6,6 @@ function getSelectionFromNumber(num) {
   if (num === 3) return "scissors";
 }
 
-function GetNumberFromSelection(sel) {
-  if (sel === "rock") return 1;
-  if (sel === "paper") return 2;
-  if (sel === "Scissors") return 3;
-}
-
 /* Se genera un N° aleatorio del 1 al 3, y devuelve rock, paper, scissors segun corresponda*/
 
 function computerPlay() {
