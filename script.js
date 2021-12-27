@@ -1,4 +1,4 @@
-/* Se crean convesrores de palabras a numeros y biceversa */
+// Se crean convesrores de palabras a numeros y biceversa 
 
 function getSelectionFromNumber(num) {
   if (num === 1) return "rock";
@@ -6,13 +6,13 @@ function getSelectionFromNumber(num) {
   if (num === 3) return "scissors";
 }
 
-/* Se genera un N° aleatorio del 1 al 3, y devuelve rock, paper, scissors segun corresponda*/
-
+// Se genera un N° aleatorio del 1 al 3, y devuelve rock, paper, scissors segun corresponda
+/*
 function computerPlay() {
   return getSelectionFromNumber(Math.ceil(Math.random() * 3));
-}
+}*/
 
-/* Se toman los valores de selección del jugador y la comutadora, y se devuelve el resultado */
+// Se toman los valores de selección del jugador y la comutadora, y se devuelve el resultado 
 
 function round(playerSelection, computerSelection) {
 if (playerSelection === computerSelection) {
@@ -32,9 +32,9 @@ if (playerSelection === computerSelection) {
 }
 
 function game() {
-  for (i = 1; i <= 5; i++) {
+//  for (i = 1; i <= 5; i++) {
     let playerSelected = prompt("Select Rock, Paper or Scissors").toLowerCase();
     let computerSelected = computerPlay();
     round(playerSelected, computerSelected);
-  }
+//  }
 }
